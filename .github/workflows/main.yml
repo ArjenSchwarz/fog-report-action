@@ -1,0 +1,22 @@
+on: [push]
+
+jobs:
+  fog_report:
+    runs-on: ubuntu-latest
+    name: Generate a fog report
+    permissions:
+      id-token: write
+      contents: read
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+      - name: Configure AWS Credentials
+        uses: aws-actions/configure-aws-credentials@v1
+        with:
+          role-to-assume: arn:aws:iam::155035777859:role/github-oidc-Role-1KGGNFPEDB3UR
+          aws-region: ap-southeast-2
+    # - name: Your CloudFormation deployment goes here
+      - name: fog report
+        uses: ./
+        with:
+          stackname: 'report-action-demo'
