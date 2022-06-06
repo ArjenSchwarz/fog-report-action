@@ -1,6 +1,6 @@
 # fog-report-action
 
-GitHub action to create a report about your CloudFormation deployment. You can run this after your CloudFormation deployment to see both in table and graph form how long everything took and where potential hiccups were. A screenshot is included below, but you can see the actual result in the actions of this repository as well.
+GitHub action to create a report about your CloudFormation deployment. You can run this after your CloudFormation deployment to see both in table and graph form how long everything took and where potential hiccups were. A screenshot is included below, but you can also see the [actual output of this action](https://github.com/ArjenSchwarz/fog-report-action/actions/runs/2447675547).
 
 ![](docs/report-demo.png)
 
