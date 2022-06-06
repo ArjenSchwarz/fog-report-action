@@ -1,5 +1,6 @@
 # action.yml
 name: 'Fog Report'
+author: Arjen Schwarz
 description: 'Generate a fog report for your CloudFormation deployment'
 inputs:
   stackname:
@@ -11,3 +12,6 @@ runs:
   image: 'Dockerfile'
   args:
     - ${{ inputs.stackname }}
+branding:
+  icon: cloud-snow
+  color: orange
