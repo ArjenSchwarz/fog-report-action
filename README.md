@@ -75,6 +75,7 @@ This results in an output similar to what you see in the examples in the [action
 
 One thing you may note is that for security reasons GitHub obfuscates the account ID in the output. If your account has an alias set up, you can ensure that the role or user assumed by the action has permission to `iam:ListAccountAliases` as well as it will then show the account alias in the output. The account ID will still be shown as `***` including in arns, but at least it should show the account alias.
 
+
 ### Parameters
 
 The only parameter currently required is the `stackname`. If you want to see the report for multiple stacks you can use a `*` wildcard to supply a name like `*demo`. You can have multiple wildcards.
