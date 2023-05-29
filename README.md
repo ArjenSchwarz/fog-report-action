@@ -14,7 +14,7 @@ Add the following to your GitHub action.
 
 ```yaml
   - name: fog report
-    uses: ArjenSchwarz/fog-report-action@v1.0.0
+    uses: ArjenSchwarz/fog-report-action@v1.1.0
     with:
       stackname: 'report-action-demo'
 ```
@@ -60,13 +60,13 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v3
       - name: Configure AWS Credentials
-        uses: aws-actions/configure-aws-credentials@v1
+        uses: aws-actions/configure-aws-credentials@v3
         with:
           role-to-assume: arn:aws:iam::155035777859:role/github-oidc-Role-1KGGNFPEDB3UR
           aws-region: ap-southeast-2
     #   - name: Your CloudFormation deployment goes here
       - name: fog report
-        uses: ArjenSchwarz/fog-report-action@v1.0.0
+        uses: ArjenSchwarz/fog-report-action@v1.1.0
         with:
           stackname: 'report-action-demo'
 ```
