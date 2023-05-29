@@ -60,7 +60,7 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v3
       - name: Configure AWS Credentials
-        uses: aws-actions/configure-aws-credentials@v3
+        uses: aws-actions/configure-aws-credentials@v2
         with:
           role-to-assume: arn:aws:iam::155035777859:role/github-oidc-Role-1KGGNFPEDB3UR
           aws-region: ap-southeast-2
